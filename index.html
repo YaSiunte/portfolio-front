@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio | Yasmin</title>
+  <meta name="description" content="Portfólio de Yasmin — Desenvolvedora Front-end">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="cover">
+    <header class="topbar">
+      <span>Portfólio</span>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <span>2026</span>
+    </header>
+
+    <h1 class="cover__title">Portfólio</h1>
+    <img class="cover__folder" src="pasta.png" alt="pasta">
+
+    <div class="card badge">
+      <p>GitHub</p>
+      <p>https://github.com/YaSiunte</p>
+      <span class="badge__check" aria-hidden="true">✓</span>
+    </div>
+
+    <div class="cover__who">
+      <h2>Yasmin<br>Siunte</h2>
+      <p>Desenvolvedora Front-end</p>
+    </div>
+
+    <p class="cover__slogan">Construindo interfaces com código e criatividade</p>
+
+    <ul class="card services">
+      <li>HTML &amp; CSS</li>
+      <li>Bootstrap</li>
+      <li>Tailwind</li>
+    </ul>
+  </section>
+
+  <section class="band" id="sobre">
+    <div class="band__labels">
+      <span>Introdução</span>
+    </div>
+    <div class="band__inner">
+      <div class="window">
+        <div class="window__dots"><i></i><i></i><i></i></div>
+        <div class="window__photo">
+          <img src="./foto.jpg" alt="Foto de Yasmin">
+        </div>
+      </div>
+      <div class="band__text">
+        <div class="band__top">
+          <span class="bubble">Oi! Sou a Yasmin</span>
+          <h2>Sobre mim</h2>
+        </div>
+        <p>
+          Sou desenvolvedora front-end focada em construir interfaces limpas,
+          responsivas e acessíveis — do HTML semântico ao CSS bem organizado.
+          Gosto de transformar ideias em páginas que funcionam em qualquer
+          tela, com código legível e detalhes que fazem diferença.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sheet" id="abordagem">
+    <div class="approach">
+      <h2>Layout primeiro,<br>código limpo depois.</h2>
+      <ol class="steps">
+        <li>Entendo o objetivo do site antes de abrir o editor.</li>
+        <li>Organizo a estrutura em HTML semântico.</li>
+        <li>Estilizo com cuidado para funcionar em qualquer tela.</li>
+      </ol>
+    </div>
+    <p class="sheet__label">Minha abordagem</p>
+  </section>
+
+  <section class="sheet" id="projetos">
+    <div class="sheet__head">
+      <h2>Meus projetos<br>de front-end</h2>
+      <p>Abra cada pasta para ver o projeto.</p>
+    </div>
+
+    <div class="foldertabs" role="tablist" aria-label="Pastas de projetos">
+      <button role="tab" aria-selected="true" aria-controls="pasta-revisao" data-pasta="0">Revisão <span>→</span></button>
+      <button role="tab" aria-selected="false" aria-controls="pasta-bootstrap" data-pasta="1">Bootstrap <span>→</span></button>
+      <button role="tab" aria-selected="false" aria-controls="pasta-tailwind" data-pasta="2">Tailwind <span>→</span></button>
+    </div>
+
+    <div class="drawer" role="tabpanel" id="pasta-revisao">
+      <div class="window">
+        <div class="window__dots"><i></i><i></i><i></i></div>
+        <div class="window__shot">
+          <img src="nectar.png" alt="">
+        </div>
+      </div>
+      <div class="drawer__info">
+        <h3>Projeto de Revisão</h3>
+        <p>Explorando a estruturação de páginas web, estilização de elementos, cores, tipografia e organização de layouts</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+        <a class="pillbtn" href="#">Ver repositório</a>
+      </div>
+    </div>
+
+    <div class="drawer" role="tabpanel" id="pasta-bootstrap" hidden>
+      <div class="window">
+        <div class="window__dots"><i></i><i></i><i></i></div>
+        <div class="window__shot">
+            <img src="bootstrap.png" alt="">
+        </div>
+      </div>
+      <div class="drawer__info">
+        <h3>Site com Bootstrap</h3>
+        <p>Projeto desenvolvido para praticar o uso do Bootstrap na criação de interfaces web, explorando componentes prontos e estilização.</p>
+        <ul class="tags"><li>HTML</li><li>Bootstrap</li></ul>
+        <a class="pillbtn" href="#">Ver repositório</a>
+      </div>
+    </div>
+
+    <div class="drawer" role="tabpanel" id="pasta-tailwind" hidden>
+      <div class="window">
+        <div class="window__dots"><i></i><i></i><i></i></div>
+        <div class="window__shot">
+            <img src="tailwind.png" alt="">
+        </div>
+      </div>
+      <div class="drawer__info">
+        <h3>Site com Tailwind CSS</h3>
+        <p>Projeto com aplicação de classes utilitárias para estilizar elementos, organizar layouts e personalizar interfaces de forma prática.</p>
+        <ul class="tags"><li>HTML</li><li>Tailwind CSS</li></ul>
+        <a class="pillbtn" href="https://github.com/YaSiunte/exercicios-front.git" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sheet skills">
+    <h2>Habilidades</h2>
+    <div class="orbits">
+      <div class="orbit"><b>HTML<br>CSS</b><small>Estrutura e estilo</small></div>
+      <div class="orbit"><b>JavaScript</b><small>Interatividade</small></div>
+      <div class="orbit"><b>Python</b><small></small>Lógica de programação</div>
+      <div class="orbit"><b>Git<br>GitHub</b><small>Versionamento</small></div>
+    </div>
+  </section>
+
+  <section class="sheet" id="contato">
+    <div class="contact__row">
+      <h2>Fale<br>comigo!</h2>
+      <div class="contact__side">
+        <ul class="card contact__card">
+          <li>Contato ✓</li>
+          <li>yasiunte@gmail.com</li>
+          <li>https://github.com/YaSiunte</li>
+          <li>www.linkedin.com/in/yasmin-siunte-gregório</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bottom">
+    <span>Portfólio</span>
+    <span>Yasmin · 2026</span>
+  </footer>
+
+  <script>
+
+    const abas = document.querySelectorAll('.foldertabs button');
+    abas.forEach((aba) => {
+      aba.addEventListener('click', () => {
+        abas.forEach((outra) => {
+          const ativa = outra === aba;
+          outra.setAttribute('aria-selected', ativa);
+          document.getElementById(outra.getAttribute('aria-controls')).hidden = !ativa;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
